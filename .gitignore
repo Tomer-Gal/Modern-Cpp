@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/vector_size_increments/out/build
+/vector_size_increments/.vs
