@@ -30,42 +30,12 @@
 *.exe
 *.out
 *.app
-/vector_size_increments/out/build
-/vector_size_increments/.vs
-/.vs/Modern-Cpp/v17
-/.vs/Modern-Cpp/FileContentIndex
-/.vs/CppExamples/v17
-/.vs/CppExamples/FileContentIndex
-/.vs/VSWorkspaceState.json
-/.vs/slnx.sqlite
-/.vs/ProjectSettings.json
-/.vs/CMakeWorkspaceSettings.json
-/ConsoleApplication1/x64
-/ConsoleApplication1/Debug
-/ConsoleApplication1/ConsoleApplication1.vcxproj.user
+
+# Compilation
+.vs
+x64
+*.user
+Debug
+Release
 /packages
-/Move Semantics/x64
-/CppExamples/x64
-/CppExamples/Debug
-/Virtual in Constructor/x64
-/Threads/x64
-/Structured Binding/x64
-/Smart Pointers/x64
-/x64/Debug/Virtual in Constructor.pdb
-/x64/Debug/Threads.pdb
-/x64/Debug/Structured Binding.pdb
-/x64/Debug/Smart Pointers.pdb
-/x64/Debug/Move Semantics.pdb
-/x64/Debug/gtest_maind.pdb
-/x64/Debug/gtest_main.pdb
-/x64/Debug/gtestd.pdb
-/x64/Debug/gtest.pdb
-/x64/Debug/02 - Struct size.pdb
-/x64/Debug/01 - const and compiler bug.pdb
-/Virtual in Constructor/Virtual in Constructor.vcxproj.user
-/Threads/Threads.vcxproj.user
-/Structured Binding/Structured Binding.vcxproj.user
-/Smart Pointers/Smart Pointers.vcxproj.user
-/Move Semantics/Move Semantics.vcxproj.user
-/CppExamples/CppExamples.vcxproj.user
-/x64/Debug
+/vector_size_increments/out/build
