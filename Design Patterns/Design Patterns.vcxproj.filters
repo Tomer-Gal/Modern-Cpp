@@ -2,11 +2,14 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
-    <ClCompile Include="singleton_test.cpp">
+    <ClCompile Include="singleton_tester.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
       <Filter>Singleton</Filter>
+    </ClCompile>
+    <ClCompile Include="factory_tester.cpp">
+      <Filter>Factory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -17,10 +20,19 @@
     <ClInclude Include="SingletonMagicStatic.h">
       <Filter>Singleton</Filter>
     </ClInclude>
+    <ClInclude Include="ImageFilterFactory.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageFilterFactoryWithRegistry.h">
+      <Filter>Factory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Singleton">
       <UniqueIdentifier>{5a73c571-afcd-488c-bf58-0e66818f9142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Factory">
+      <UniqueIdentifier>{2d0098ee-da17-4841-88bf-9cb34d122db8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
