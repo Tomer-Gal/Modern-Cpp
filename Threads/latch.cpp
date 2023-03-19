@@ -12,17 +12,8 @@ void long_running_operation(std::latch& latch)
 	latch.count_down();
 }
 
-constexpr int factorial(int x)
-{
-	if (x <= 1)
-		return 1;
-	else
-		return x * factorial(x - 1);
-}
-
 TEST(latch, wait)
 {
-	constexpr int result_of_add = factorial(3);
 	constexpr int NUM_THREADS{ 3 };
 	std::latch latch(NUM_THREADS);
 	std::vector<std::thread> threads(NUM_THREADS);
