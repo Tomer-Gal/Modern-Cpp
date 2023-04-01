@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <any>
+#include <ostream>
 
 TEST(any, any_type)
 {
@@ -27,4 +28,28 @@ TEST(any, any_has_value)
 	a.reset();
 
 	EXPECT_FALSE(a.has_value());
+}
+
+struct Student
+{
+	std::string name;
+	int age;
+};
+
+std::ostream& operator<<(std::ostream& os, const Student& s)
+{
+	os << s.name << " " << s.age;
+	return os;
+}
+
+TEST(any, custom_type)
+{
+	Student s = { "Moshe",30 };
+	std::any a = s;
+	Student s2 = std::any_cast<Student>(a);
+
+	std::cout << s << std::endl;
+	std::cout << s2 << std::endl;
+
+	EXPECT_STREQ(a.type().name(), "struct Student");
 }
