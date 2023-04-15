@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="factory_tester.cpp" />
+    <ClCompile Include="observer_v1.cpp" />
+    <ClCompile Include="observer_v2.cpp" />
     <ClCompile Include="Singleton.cpp" />
     <ClCompile Include="singleton_tester.cpp" />
     <ClCompile Include="pch.cpp">

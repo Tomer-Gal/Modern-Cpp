@@ -11,6 +11,12 @@
     <ClCompile Include="factory_tester.cpp">
       <Filter>Factory</Filter>
     </ClCompile>
+    <ClCompile Include="observer_v1.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="observer_v2.cpp">
+      <Filter>Observer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
@@ -34,5 +40,11 @@
     <Filter Include="Factory">
       <UniqueIdentifier>{2d0098ee-da17-4841-88bf-9cb34d122db8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Observer">
+      <UniqueIdentifier>{8516cb0b-f9c4-45d0-9beb-c05a0e25c9f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
