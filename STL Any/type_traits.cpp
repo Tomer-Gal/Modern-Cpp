@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <type_traits>
+#include <any>
 
 template <typename T>
 void print_type(T&& arg)
@@ -46,4 +47,32 @@ TEST(type_traits, is_other)
 {
 	std::string str = "hello";
 	print_type(str);
+}
+
+TEST(type_traits, any)
+{
+	int b = 3;
+	std::any a = &b;
+	print_type(a);
+
+}
+
+std::ostream& operator<<(std::ostream& os, const std::any& a)
+{
+	os << __FUNCTION__;
+	if (a.has_value())
+	{
+		os << "Has value";
+	}
+	else
+	{
+		os << "No value";
+	}
+	return os;
+}
+
+TEST(type_traits, print_any)
+{
+	std::any a = 5;
+	std::cout << a << std::endl;
 }
